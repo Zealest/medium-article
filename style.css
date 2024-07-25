@@ -1,0 +1,96 @@
+body {
+  color: #494949;
+  font-size: 1.125rem;
+  line-height: 1.6;
+  font-weight: lighter;
+  font-family: 'Lora', serif;
+  margin: 0;
+}
+h1, h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
+h2 {
+  color: #A0A0A0;
+  font-weight: normal;
+}
+a {
+  text-decoration: none;
+  color: #4352A1;
+}
+.banner {
+  background-image: url("images/unsplash_bg.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 7.5rem 0;
+  position: relative;
+  text-align: center;
+}
+.banner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* optional: add a dark overlay for better text readability */
+  z-index: 1;
+}
+.banner .container {
+  position: relative;
+  z-index: 2;
+}
+.banner h1 {
+  font-size: 2.375rem;
+  margin: 0;
+}
+.banner p {
+  font-size: 1.875rem;
+  font-style: italic;
+  font-weight: lighter;
+  opacity: 0.8;
+  margin: 0;
+}
+.container {
+  max-width: 43.75rem;
+  margin: 3.125rem auto;
+  padding: 0 1rem;
+}
+.link-medium {
+  background-image: linear-gradient(to bottom, rgba(233, 253, 240, 1), rgba(233, 253, 240, 1));
+  color: #636363;
+  font-weight: lighter;
+  font-size: 1.5625rem;
+  font-style: italic;
+  display: inline-block;
+  margin: 1rem 0;
+}
+.link-medium:hover {
+  background-image: linear-gradient(to bottom, rgba(125, 255, 179, 1), rgba(125, 255, 179, 1));
+}
+
+@media(max-width: 56.25rem) {
+  .container {
+      max-width: 43.75rem;
+  }
+}
+@media(max-width: 46.875rem) {
+  .container {
+      max-width: 28.125rem;
+  }
+}
+@media(max-width: 31.25rem) {
+  .container {
+      max-width: 21.875rem;
+  }
+  .banner {
+      padding: 3.125rem 0;
+  }
+  .banner h1 {
+      font-size: 1.875rem;
+  }
+  .banner p {
+      font-size: 1.25rem;
+  }
+}
